@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/ff81abf778.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="flex-center">
+        <h1>To-Do List</h1>
+    </header>
+
+    <div class="input flex-center">
+        <input type="text" id="input-box" placeholder="Enter your task">
+        <button id="add-btn"><i class="fa-solid fa-square-plus fa-xl"></i></button>
+        <div class="select">
+            <select name="todos" id="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="todo-container" class="flex-center">
+        <ul id="todo-list">
+            <!-- <div class="todo checked">
+                <li class="todo-item">task1</li>
+                <button class="check-btn"><i class="fa-solid fa-check fa-sm"></i></button>
+                <button class="trash-btn"><i class="fa-solid fa-trash fa-2xs"></i></button>
+            </div>
+            <div class="todo">
+                <li class="todo-item">task2</li>
+                <button class="check-btn"><i class="fa-solid fa-check fa-sm"></i></button>
+                <button class="trash-btn"><i class="fa-solid fa-trash fa-2xs"></i></button>
+            </div> -->
+        </ul>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
